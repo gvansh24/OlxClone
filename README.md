@@ -1,79 +1,86 @@
-<<<<<<< HEAD
-# Ads-Network
-A MERN stack application where user can authenticate and post ads and other user can buy it.
-=======
-<<<<<<< HEAD
-# Ads-Network
-=======
-# Getting Started with Create React App
+# OlxClone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+OlxClone is a web application that allows users to buy and sell items from other sellers. It provides a platform for users to list their items for sale, browse listings from other sellers, and make purchases.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **User Authentication:** Users can sign up for an account, log in, and log out.
+- **Create Listings:** Sellers can create listings for items they want to sell, including details such as title, description, price, and images.
+- **Browse Listings:** Users can browse listings from other sellers, view item details, and filter listings based on various criteria.
+- **Chat with Seller:** Users can communicate with sellers through a built-in chat feature, enabling negotiation and discussion of item details.
+- **Negotiate Price:** Buyers and sellers can negotiate prices and terms directly through the chat feature.
+- **Mark Item as Sold:** Sellers can mark their items as sold once they are no longer available for purchase.
+- **Set Up Profile:** Users can set up their profiles and manage listings.
+- **Add Items to Favorites:** Users can save listings to their favorites for quick access and future reference.
+- **Real-time Updates:** The application utilizes Firebase's real-time database to provide instant updates on listings, purchases, and user interactions.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend:** React.js
+- **Backend:** Firebase (Authentication, Firestore, Realtime Database)
+- **Hosting:** Firebase Hosting
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+To run the OlxClone project locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+git clone https://github.com/your-username/OlxClone.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
 
-### `npm run eject`
+2. Navigate to the project directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+cd OlxClone
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Install dependencies:
 
-## Learn More
+```
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+4. Set up Firebase:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Create a Firebase project in the Firebase Console.
+- Enable Firebase Authentication, Firestore, and Realtime Database.
+- Copy your Firebase configuration (apiKey, authDomain, projectId, etc.).
+- Replace the Firebase configuration in the project's code with your own. You will get the same from firebase console itself. Copy paste it in the `.env` file in the root folder.
 
-### Analyzing the Bundle Size
+  Example `.env` file:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  ```
+  REACT_APP_API_KEY=your-api-key
+  REACT_APP_AUTH_DOMAIN=your-auth-domain
+  REACT_APP_PROJECT_ID=your-project-id
+  REACT_APP_STORAGE_BUCKET=your-storage-bucket
+  REACT_APP_MESSAGING_SENDER_ID=your-messaging-sender-id
+  REACT_APP_APP_ID=your-app-id
+  REACT_APP_DATABASE_URL=your-database-url
+  ```
 
-### Making a Progressive Web App
+5. Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+npm start
 
-### Deployment
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+6. Open your web browser and navigate to `http://localhost:3000` to view the application.
 
-### `npm run build` fails to minify
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 3182867 (First commit)
->>>>>>> master
+Contributions to OlxClone are welcome! If you encounter any bugs, have feature requests, or would like to contribute to the project, please open an issue or submit a pull request.
+
+
